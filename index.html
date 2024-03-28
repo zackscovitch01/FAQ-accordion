@@ -1,84 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Default Starter</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Karla&family=Spectral&display=swap');
+      @import url("https://fonts.googleapis.com/css2?family=Karla&family=Spectral&display=swap");
     </style>
     <!-- normalize -->
-    <link rel="stylesheet" href="./normalize.css">
+    <link rel="stylesheet" href="./normalize.css" />
     <!-- main css -->
-    <link rel="stylesheet" href="./main.css">
-</head>
-<body>
-    <h1>hello world</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-        Odio magnam perspiciatis cumque doloribus quo architecto 
-        minima aperiam inventore similique quasi.
-    </p>
-
-    <h2>hello world</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-        Odio magnam perspiciatis cumque doloribus quo architecto 
-        minima aperiam inventore similique quasi.
-    </p>
-
-    <h1>hello world</h1>
-    <h2>hello world</h2>
-    <h3>hello world</h3>
-    <h4>hello world</h4>
-    <h5>hello world</h5>
-
-    <a href="#">link example</a>
-
-    <ul>
-        <li>First Item</li>
-        <li>Second Item</li>
-        <li>Third Item</li>
-    </ul>
-    <img src="computer.jpg" alt="computer" class="img">
-    <br />
-    <button class="btn" type="button">regular button</button>
-    <button class="btn btn-hipster" type="button">hipster button</button>
-    <br />
-    <br />
-    <div class="alert alert-danger">hello from danger</div>
-    <div class="alert alert-success">hello from success</div>
-    <br />
-    <br />
-    <form class="form">
-        <h4>contact form</h4>
-        <div class="form-row">
-            <label for="name" class="form-label">Name</label>
-            <input type="text" placeholder="hello there" id="name" class="form-input">
+    <link rel="stylesheet" href="./main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="main-container">
+      <header class="faq-header">
+        <img class="" src="./assets/images/icon-star.svg" alt="" />
+        <h1>FAQs</h1>
+      </header>
+      <!-- question -->
+      <article class="question">
+        <div class="question-header">
+          <p>What is Frontend Mentor, and how will it help me?</p>
+          <button type="button" id="toggleAnswer" onclick="toggleQuestion()">
+            <img
+              class="imgBtn"
+              id="imgBtn"
+              src="./assets/images/icon-plus.svg"
+              alt=""
+            />
+          </button>
         </div>
+        <p class="question-answer" id="hideQuestionAnswer">
+          Frontend Mentor offers realistic coding challenges to help developers
+          improve their frontend coding skills with projects in HTML, CSS, and
+          JavaScript. It's suitable for all levels and ideal for portfolio
+          building.
+        </p>
+      </article>
+      <!-- end of question -->
 
-        <div class="form-row">
-            <label for="number" class="form-label">Number</label>
-            <input type="number" id="number" class="form-input">
+      <!-- question -->
+      <article class="question">
+        <div class="question-header">
+          <p>Is Frontend Mentor free?</p>
+          <button type="button" id="toggleAnswer" onclick="toggleQuestion2()">
+            <img id="imgBtn2" src="./assets/images/icon-plus.svg" alt="" />
+          </button>
         </div>
+        <p class="question-answer" id="hideQuestionAnswer2">
+          Yes, Frontend Mentor offers both free and premium coding challenges,
+          with the free option providing access to a range of projects suitable
+          for all skill levels.
+        </p>
+      </article>
+      <!-- end of question -->
 
-        <div class="form-row">
-            <label for="email" class="form-label">Email</label>
-            <input type="email" id="email" class="form-input">
-            <small class="form-alert">please provide value</small>
+      <!-- question -->
+      <article class="question">
+        <div class="question-header">
+          <p>Can I use Frontend Mentor projects in my portfolio?</p>
+          <button type="button" id="toggleAnswer" onclick="toggleQuestion3()">
+            <img id="imgBtn3" src="./assets/images/icon-plus.svg" alt="" />
+          </button>
         </div>
-        <div class="form-row">
-            <label for="textarea"  class="form-label">Textarea</label>
-            <textarea class="form-textarea">
-Default value
-            </textarea>
+        <p class="question-answer" id="hideQuestionAnswer3">
+          Yes, you can use projects completed on Frontend Mentor in your
+          portfolio. It's an excellent way to showcase your skills to potential
+          employers!
+        </p>
+      </article>
+      <!-- end of question -->
+
+      <!-- question -->
+      <article class="question">
+        <div class="question-header">
+          <p>How can I get help if I'm stuck on a Frontend Mentor challenge?</p>
+          <button type="button" id="toggleAnswer" onclick="toggleQuestion4()">
+            <img id="imgBtn4" src="./assets/images/icon-plus.svg" alt="" />
+          </button>
         </div>
-        <button class="btn btn-block">submit</button>
-    </form>
-    <div class="loading"></div>
-    <br/>
-    <br/>
-    <div class="title">
-        <h2>section title</h2>
-        <div class="title-underline"></div>
+        <p class="question-answer" id="hideQuestionAnswer4">
+          Yes, you can use projects completed on Frontend Mentor in your
+          portfolio. It's an excellent way to showcase your skills to potential
+          employers!
+        </p>
+      </article>
+      <!-- end of question -->
+
+      <!-- question -->
+      <article class="question">
+        <div class="question-header">
+          <p>How can I get help if I'm stuck on a Frontend Mentor challenge?</p>
+          <button type="button" id="toggleAnswer" onclick="toggleQuestion4()">
+            <img id="imgBtn4" src="./assets/images/icon-plus.svg" alt="" />
+          </button>
+        </div>
+        <p class="question-answer" id="hideQuestionAnswer4">
+          The best place to get help is inside Frontend Mentor's Discord
+          community. There's a help channel where you can ask questions and seek
+          support from other community members.
+        </p>
+      </article>
+      <!-- end of question -->
     </div>
-</body>
+
+    <script src="app.js"></script>
+  </body>
 </html>
